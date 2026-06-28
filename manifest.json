@@ -1,8 +1,8 @@
 {
-  "name": "Home Plus MD Report",
-  "short_name": "HP Report",
-  "description": "Home Plus Group Daily MD Report",
-  "start_url": "/homeplus-report/homeplus_md_report_v3.html",
+  "name": "Home Plus Group",
+  "short_name": "Home Plus",
+  "description": "Home Plus Group Daily Reports & Forms",
+  "start_url": "/homeplus-report/homeplus_md_report_v4.html",
   "display": "standalone",
   "background_color": "#1a2744",
   "theme_color": "#1a2744",
@@ -17,6 +17,23 @@
       "src": "https://asifbhuiyan38-lab.github.io/homeplus-report/icon-512.png",
       "sizes": "512x512",
       "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "MD Report",
+      "url": "/homeplus-report/homeplus_md_report_v4.html",
+      "description": "View MD Daily Report"
+    },
+    {
+      "name": "Super Shop Entry",
+      "url": "/homeplus-report/homeplus_supershop_form.html",
+      "description": "Super Shop Daily Entry"
+    },
+    {
+      "name": "Investment Entry",
+      "url": "/homeplus-report/homeplus_investment_form.html",
+      "description": "Investment Daily Entry"
     }
   ]
 }
