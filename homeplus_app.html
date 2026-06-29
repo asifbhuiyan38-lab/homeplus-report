@@ -190,7 +190,7 @@ body{
 }
 
 /* ── FORM STYLES ── */
-.form-wrap{padding:16px}
+.form-wrap{padding:10px}
 .form-card{
   background:white;border-radius:12px;
   padding:16px;margin-bottom:12px;
@@ -206,10 +206,11 @@ body{
 .field label{font-size:11px;font-weight:600;color:var(--navy)}
 .field label span.req{color:var(--red);margin-left:2px}
 .field input,.field select,.field textarea{
-  padding:10px 12px;border:1.5px solid var(--rule);
-  border-radius:8px;font-size:14px;font-family:inherit;
+  padding:9px 10px;border:1.5px solid var(--rule);
+  border-radius:8px;font-size:13px;font-family:inherit;
   background:#f7f8fc;color:var(--text);
   transition:border 0.15s;
+  width:100%;min-width:0;
 }
 .field input:focus,.field select:focus{
   outline:none;border-color:var(--navy);background:white;
@@ -219,9 +220,13 @@ body{
   position:absolute;left:10px;top:50%;transform:translateY(-50%);
   font-size:13px;font-weight:600;color:var(--muted);pointer-events:none;
 }
-.amount-wrap input{padding-left:24px}
+.amount-wrap input{padding-left:22px;font-size:13px}
 .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
+.grid-3{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+@media(max-width:400px){
+  .grid-2{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr 1fr}
+}
 .sub-label{
   font-size:10px;font-weight:700;color:var(--gold);
   text-transform:uppercase;letter-spacing:1px;
@@ -253,7 +258,7 @@ body{
 /* Investment card */
 .inv-card{border:1.5px solid var(--rule);border-radius:10px;margin-bottom:12px;overflow:hidden}
 .inv-card-hdr{padding:10px 14px;font-size:12px;font-weight:700}
-.inv-card-body{padding:12px}
+.inv-card-body{padding:10px 8px}
 .card-st .inv-card-hdr{background:#eaf2f8;color:#1a5276;border-bottom:1.5px solid #aed6f1}
 .card-dir .inv-card-hdr{background:#eafaea;color:#1a3a1a;border-bottom:1.5px solid #a9dfba}
 .card-sh .inv-card-hdr{background:#fdf3e3;color:#6d3d00;border-bottom:1.5px solid #f0c98a}
@@ -333,8 +338,9 @@ body{
   background:white;border-radius:0 0 8px 8px;
   overflow-x:auto;margin-bottom:2px;
   box-shadow:0 1px 4px rgba(0,0,0,0.06);
+  -webkit-overflow-scrolling:touch;
 }
-table{width:100%;border-collapse:collapse;font-size:10px;min-width:400px}
+table{width:100%;border-collapse:collapse;font-size:9px;min-width:320px}
 th{
   background:#eef2fb;color:var(--navy);
   font-weight:700;padding:6px 8px;
